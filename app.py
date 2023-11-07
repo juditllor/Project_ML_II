@@ -30,7 +30,8 @@ if screen == 'Iris':
 
     categories = ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
 
-    st.header(categories[pred_iris])
+    hibiscus_emoji = "\U0001F33A"
+    st.header(categories[pred_iris] + hibiscus_emoji)
 
     st.image(predicted_flower)
 
@@ -57,8 +58,8 @@ else:
                       columns = ['Fresh', 'Milk', 'Grocery', 'Frozen', 'Detergents_Paper', 'Delicassen', 'Region_1', 'Region_2', 'Region_3'])
     pred_channel = model_customers.predict(df)[0]
 
-    hibiscus_emoji = "\U0001F33A"
-    st.subheader("Predicted Channel:" + hibiscus_emoji)
+    department_store_emoji = "\U0001F3EC"
+    st.subheader("Predicted Channel:" + department_store_emoji)
     predicted_channel = 'Retail Channel'
     if pred_channel == 1:
         predicted_channel = 'Horeca Channel'
