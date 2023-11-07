@@ -57,6 +57,7 @@ else:
                       columns = ['Fresh', 'Milk', 'Grocery', 'Frozen', 'Detergents_Paper', 'Delicassen', 'Region_1', 'Region_2', 'Region_3'])
     pred_channel = model_customers.predict(df)[0]
 
+    st.header("Predicted Channel:")
     predicted_channel = 'Retail Channel'
     if pred_channel == 1:
         predicted_channel = 'Horeca Channel'
