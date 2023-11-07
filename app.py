@@ -57,7 +57,8 @@ else:
                       columns = ['Fresh', 'Milk', 'Grocery', 'Frozen', 'Detergents_Paper', 'Delicassen', 'Region_1', 'Region_2', 'Region_3'])
     pred_channel = model_customers.predict(df)[0]
 
-    st.header("Predicted Channel:")
+    hibiscus_emoji = "\U0001F33A"
+    st.subheader("Predicted Channel:" + hibiscus_emoji)
     predicted_channel = 'Retail Channel'
     if pred_channel == 1:
         predicted_channel = 'Horeca Channel'
