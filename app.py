@@ -31,7 +31,8 @@ if screen == 'Iris':
     categories = ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
 
     hibiscus_emoji = "\U0001F33A"
-    st.header(categories[pred_iris] + hibiscus_emoji)
+    st.subheader("Predicted Flower:" + hibiscus_emoji)
+    st.header(categories[pred_iris])
 
     st.image(predicted_flower)
 
